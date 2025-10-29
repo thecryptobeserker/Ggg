@@ -36,7 +36,7 @@ print(clean)
 
 #Problem 4
 
-# Stricter email pattern: enforces proper placement of dots/dashes/underscores
+# email pattern enforces proper placement of dots/dashes/underscores
 pattern = r"^[A-Za-z0-9](?:[._-]?[A-Za-z0-9])*@[A-Za-z0-9](?:[-]?[A-Za-z0-9])*(?:\.[A-Za-z0-9](?:[-]?[A-Za-z0-9])*)*\.[A-Za-z]{2,}$"
 
 emails = [
@@ -50,4 +50,4 @@ emails = [
 # Print True if pattern matches, else False
 for e in emails:
     print(e, "->", bool(re.fullmatch(pattern, e)))
-# Matches emails with valid alphanumeric starts, proper dots/dashes, and a 2+ letter TLD.
+# Matches emails with valid starts, proper dots/dashes, and a 2+ letter TLD.
