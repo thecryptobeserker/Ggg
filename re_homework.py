@@ -22,7 +22,6 @@ dates = re.findall(pattern, text)
 print(dates)
 
 #Problem 3
-import re
 
 messy = "This sentence has too many spaces . Also odd spacing ."
 
@@ -36,7 +35,6 @@ print(clean)
 # Explanation: First we collapse multiple spaces, then remove any space directly before a period.
 
 #Problem 4
-import re
 
 # Stricter email pattern: enforces proper placement of dots/dashes/underscores
 pattern = r"^[A-Za-z0-9](?:[._-]?[A-Za-z0-9])*@[A-Za-z0-9](?:[-]?[A-Za-z0-9])*(?:\.[A-Za-z0-9](?:[-]?[A-Za-z0-9])*)*\.[A-Za-z]{2,}$"
