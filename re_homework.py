@@ -13,6 +13,9 @@ else:
 
 
 #Problem 2
+
+import re
+
 text = "Deadlines: 01/09/2025, 1/9/25 (bad), 21/10/2024, and 30/12/2023."
 
 # \b makes sure word boundaries, \d{2} generates exactly two digits, / is an actual slash; \d{4} generates four digits
@@ -22,6 +25,8 @@ dates = re.findall(pattern, text)
 print(dates)
 
 #Problem 3
+
+import re
 
 messy = "This sentence has too many spaces . Also odd spacing ."
 
@@ -35,6 +40,8 @@ print(clean)
 # Explanation: First we collapse multiple spaces, then remove any space directly before a period.
 
 #Problem 4
+
+import re
 
 # email pattern enforces proper placement of dots/dashes/underscores
 pattern = r"^[A-Za-z0-9](?:[._-]?[A-Za-z0-9])*@[A-Za-z0-9](?:[-]?[A-Za-z0-9])*(?:\.[A-Za-z0-9](?:[-]?[A-Za-z0-9])*)*\.[A-Za-z]{2,}$"
